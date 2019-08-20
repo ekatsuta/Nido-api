@@ -1,0 +1,2 @@
+class LanguageCasesController < ApplicationController
+end

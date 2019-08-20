@@ -1,0 +1,2 @@
+class ListingProvisionsController < ApplicationController
+end
