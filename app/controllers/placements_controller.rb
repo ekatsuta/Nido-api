@@ -13,8 +13,8 @@ class PlacementsController < ApplicationController
       placement.save
       render json: placement
     else
-
-      byebug
+      error = placement.errors.full_messages[0]
+      render json: {errors: error}
     end
 
   end
