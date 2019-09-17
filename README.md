@@ -1,24 +1,28 @@
-# README
+# NIDO App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Final Project for [Flatiron School](https://flatironschool.com/) Module 5 (React.Js, Redux & Ruby on Rails)**
 
-Things you may want to cover:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-* Ruby version
+## PROJECT DESCRIPTION
 
-* System dependencies
+### Goal
+A web app to connect volunteers offering up housing with caseworkers representing refugees & asylum seekers
 
-* Configuration
+### Functions 
+- React app with double authentication & authorization between hosts and caseworkers. 
+- Leveraged Redux to enhance the readability and efficiency of the React components 
+- Uses Ruby on Rails API to store information on the users, home listings and cases
+- Uses Mapbox, Chart.js and React Calendar for additional features
 
-* Database creation
+**Time allocated: 2 weeks**
 
-* Database initialization
 
-* How to run the test suite
+## Getting Started
 
-* Services (job queues, cache servers, search engines, etc.)
+Run `bundle install`, then run `rails s` to start the server. 
 
-* Deployment instructions
+## Built With
 
-* ...
+- Ruby on Rails
+
