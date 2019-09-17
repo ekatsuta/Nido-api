@@ -25,16 +25,9 @@ class ListingsController < ApplicationController
       latitude: params[:latitude]
     )
 
-    # picture = Picture.create(
-    #   listing_id: listing.id,
-    #   image_url: params[:listing][:img_url]
-    # )
-
     Picture.createLinks(params[:listing][:img_url], listing.id)
     Language.createLinks(params[:listing][:languages], listing.id)
     Provision.createLinks(params[:listing][:provisions], listing.id)
-
-    byebug
 
     render json: listing
   end

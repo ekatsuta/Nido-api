@@ -6,12 +6,13 @@ class MessagesController < ApplicationController
   end
 
   def create
-    conversation = Conversation.find(params[:conversation_id])
     message = Message.new(message_params)
-   if message.save
-    render json: message
+   if message.valid?
+     message.save
+     render json: message
    else
-    render json: {errors: "ERROR"}
+     error = message.errors.full_messages[0]
+     render json: {errors: error}
    end
   end
 
